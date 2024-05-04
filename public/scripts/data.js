@@ -7,42 +7,42 @@ export const cardsData = [
     image: '/a.jpg'
   },
   {
-    id: 1,  
+    id: 2,  
     destination: 'San Francisco',
     made_by: 'Peter',
     description: 'Travel specially dedicated to fans of basketball odsjcnsjdcndsjn cndsjcn dsn cwsji',
     image: '/a.jpg'
   },
   {
-    id: 1,  
+    id: 3,  
     destination: 'San Francisco',
     made_by: 'Peter',
     description: 'Travel specially dedicated to fans of basketball odsjcnsjdcndsjn cndsjcn dsn cwsji',
     image: '/a.jpg'
   },
   {
-    id: 1,  
+    id: 4,  
     destination: 'San Francisco',
     made_by: 'Peter',
     description: 'Travel specially dedicated to fans of basketball odsjcnsjdcndsjn cndsjcn dsn cwsji',
     image: '/a.jpg'
   },
   {
-    id: 1,  
+    id: 5,  
     destination: 'San Francisco',
     made_by: 'Peter',
     description: 'Travel specially dedicated to fans of basketball odsjcnsjdcndsjn cndsjcn dsn cwsji',
     image: '/a.jpg'
   },
   {
-    id: 1,  
+    id: 6,  
     destination: 'San Francisco',
     made_by: 'Peter',
     description: 'Travel specially dedicated to fans of basketball odsjcnsjdcndsjn cndsjcn dsn cwsji',
     image: '/a.jpg'
   },
   {
-    id: 1,  
+    id: 7,  
     destination: 'San Francisco',
     made_by: 'Peter',
     description: 'Travel specially dedicated to fans of basketball odsjcnsjdcndsjn cndsjcn dsn cwsji',
