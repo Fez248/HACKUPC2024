@@ -49,12 +49,11 @@ export const Navbar = () => {
 	);
 
 	return (
-		<div>
-		<NextUINavbar maxWidth="xl" position="sticky" height="20px" className="py-6">
+		<><NextUINavbar shouldHideOnScroll maxWidth="xl" position="sticky" height="20px" className="py-6">
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1 border-none" href="/">
-						<Image alt='logo' {...logo} className=" w-13 border-r-0 rounded-none"/>
+						<Image alt='logo' {...logo} className=" w-13 border-r-0 rounded-none" />
 					</NextLink>
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -95,13 +94,11 @@ export const Navbar = () => {
 					{siteConfig.navMenuItems.map((item, index) => (
 						<NavbarMenuItem key={`${item}-${index}`}>
 							<Link
-								color={
-									index === 2
-										? "primary"
-										: index === siteConfig.navMenuItems.length - 1
+								color={index === 2
+									? "primary"
+									: index === siteConfig.navMenuItems.length - 1
 										? "danger"
-										: "foreground"
-								}
+										: "foreground"}
 								href="#"
 								size="lg"
 							>
@@ -111,9 +108,6 @@ export const Navbar = () => {
 					))}
 				</div>
 			</NavbarMenu>
-		</NextUINavbar>
-		<Divider orientation="horizontal" />
-		</div>
-
+		</NextUINavbar><Divider orientation="horizontal" /></>
 	);
 };
