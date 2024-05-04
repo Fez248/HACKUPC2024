@@ -1,7 +1,7 @@
 import React from 'react';
 import { cardsData } from './data.js'; // Import the data
 import {Card, CardHeader, CardBody, Image} from "@nextui-org/react";
-import travelPage from '../../app/travel/travelPage.tsx';
+import travelPage from '../../app/travel/[id]/page.tsx';
 import homePage from '../../app/home/homePage.tsx';
 
 import Link from 'next/link'; // Import Link from Next.js
