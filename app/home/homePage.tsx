@@ -2,9 +2,8 @@
 
 import Head from 'next/head';
 import OurCards from '../../public/scripts/ourCard.js';
-import homeHero from '/public/homeHero.png';
+import homeHero from '../../public/homeHero.png';
 import {Card, CardHeader, CardBody, Image} from "@nextui-org/react";
-import MapComponent from '../../components/mapComponent';
 
 export default function homePage() {
   return (
