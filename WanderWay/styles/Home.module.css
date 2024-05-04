@@ -24,12 +24,3 @@
   height: auto;
   z-index: -1;
 }
-
-.card {
-  height: 20vh;
-  width: 20vw;
-  position: absolute;
-  margin: 2%;
-  transform: translate(0, -35vh);
-  background-color: black;
-}
