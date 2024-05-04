@@ -8,8 +8,10 @@ export default function RootLayout({
 }) {
   return (
 <html lang="en">
-  <body className='g-zync-300'>
-    <NavBar text="HOLA" />
+  <body>
+    <div className='g-zync-300 full'>
+      <NavBar/>
+    </div>
     {children}
   </body>
 </html>
