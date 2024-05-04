@@ -14,6 +14,9 @@ export default function homePage() {
 
       {/* Content Grid */}
       <section className={styles.contentGrid}>
+        <div className={styles.card}></div>
+        <div className={styles.card}></div>
+        <div className={styles.card}></div>
       </section>
 
       {/* Footer */}
