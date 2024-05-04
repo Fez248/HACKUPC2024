@@ -5,12 +5,16 @@ import {
   Input,
   Textarea,
   DateInput,
-  Button,
+  Button
 } from "@nextui-org/react";
+import {Select, SelectItem} from "@nextui-org/react";
 import { CalendarDate, parseDate } from "@internationalized/date";
 import { useForm, SubmitHandler } from "react-hook-form";
 import React, { useState, useEffect } from 'react';
 import { Link } from "@nextui-org/link";
+import { tags } from "@/public/scripts/data";
+import { cardsData } from "@/public/scripts/data";
+import { animals } from "@/public/scripts/data";
 
 export default function createPage() {
   return (
@@ -25,11 +29,21 @@ export default function createPage() {
             defaultValue=""
             className=""
           />
-          <Input type="text" label="Tags" className="" />
+          <Select
+            items={animals}
+            label="Favorite Animal"
+            placeholder="Select an animal"
+            className="max-w-xs"
+          >
+          {/* Map over the items array and generate SelectItem components */}
+            {animals.map(animal => (
+          <SelectItem key={animal.value}>{animal.label}</SelectItem>
+          ))}
+          </Select>
           <Textarea
             className="col-span-2"
             isRequired
-            minRows={6}
+            minRows={6} 
             label="Description"
           />
           <DateInput label={"Departure Date"} isRequired />
