@@ -54,7 +54,7 @@ export const Navbar = () => {
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1 border-none" href="/">
-						<Image alt='logo' {...logo} className=" w-17 border-r-0 rounded-none"/>
+						<Image alt='logo' {...logo} className=" w-13 border-r-0 rounded-none"/>
 					</NextLink>
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
