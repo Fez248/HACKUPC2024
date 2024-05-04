@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { queryOverpass } from '../utils/overpass';
 import { fetchRouteData } from '../utils/distances';
 import MapboxMap from '../components/mapboxMap';
+import { routesArray } from '../public/data/routedata2';
 
 const MapComponent = () => {
     const [queryResult, setQueryResult] = useState('');
@@ -44,9 +45,9 @@ const MapComponent = () => {
       <div>
         <button onClick={makeOverpassQuery}>Make Overpass Query</button>
         <div>
-        <MapboxMap />
+        <MapboxMap info={routesArray[0]}/>
         </div>
-        <pre>{queryResult}</pre>
+        <pre>{queryResult}</pre>GeoJsonProperties
       </div>
     );
   };
