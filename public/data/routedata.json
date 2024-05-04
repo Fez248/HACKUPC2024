@@ -1,0 +1,45 @@
+{
+    "routes": [
+      {
+        "name": "UK Harry Potter Tour",
+        "cities": [
+          {
+            "name": "London",
+            "country": "UK",
+            "coordinates": [-0.1278, 51.5074]
+          },
+          {
+            "name": "Edinburgh",
+            "country": "UK",
+            "coordinates": [-3.1883, 55.9533]
+          },
+          {
+            "name": "Oxford",
+            "country": "UK",
+            "coordinates": [-1.2577, 51.7520]
+          },
+          {
+            "name": "Gloucester",
+            "country": "UK",
+            "coordinates": [-2.2382, 51.8642]
+          },
+          {
+            "name": "Durham",
+            "country": "UK",
+            "coordinates": [-1.5849, 54.7753]
+          },
+          {
+            "name": "Alnwick",
+            "country": "UK",
+            "coordinates": [-1.7063, 55.4127]
+          },
+          {
+            "name": "Lacock",
+            "country": "UK",
+            "coordinates": [-2.1199, 51.4148]
+          }
+        ]
+      }
+    ]
+  }
+  

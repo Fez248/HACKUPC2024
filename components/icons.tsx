@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IconSvgProps } from "@/types";
+import { IconSvgProps } from "@/types/index";
 import { Image } from "@nextui-org/react";
 
 export const Logo: React.FC<IconSvgProps> = ({

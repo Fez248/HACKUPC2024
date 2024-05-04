@@ -32,7 +32,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<head />
+			<head> <link href='https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css' rel='stylesheet' /> </head>
 			<body
 				className={clsx(
 					"min-h-screen bg-background font-sans antialiased",
