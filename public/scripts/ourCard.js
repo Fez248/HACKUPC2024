@@ -4,12 +4,17 @@ import {Card, CardHeader, CardBody, Image} from "@nextui-org/react";
 
 const OurCard = ({ card }) => {
   return (
-    <Card className='py-4' style={{width: "18rem"}}> 
-      <CardBody className="overflow-visible py-2">
-        <Image style={{paddingBottom: "10px"}} alt="Card background" src={card.image} width={270}/>
+    <Card className='py-4 rounded-none'> 
+      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <h4 className="font-bold text-large">{card.destination}</h4>
-        <p className="text-tiny font-bold" style={{color: 'grey'}}>Made by {card.made_by}</p>
-        <p className="text-medium font-bold">{card.description}</p>
+        <p className="text-tiny font-bold">{card.description}</p>
+      </CardHeader>
+      <CardBody className="overflow-visible py-2">
+        <Image
+          alt="Card background"
+          src={card.image}
+          width={270}
+        />
       </CardBody>
     </Card>
   );
@@ -17,7 +22,7 @@ const OurCard = ({ card }) => {
 
 const OurCards = () => {
   return (
-    <section className="flex flex-wrap gap-4">
+    <section className="flex flex-wrap gap-3">
       {cardsData.slice(0,4).map((card) => (
         <OurCard key={card.id} card={card}/>
       ))}
