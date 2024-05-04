@@ -31,6 +31,8 @@ const OurCards = () => {
       ))}
     </div>
   );
-};
+ };
+ 
+
 
 export default OurCards;
