@@ -11,12 +11,13 @@ import {
   import React, { useState, useEffect } from 'react';
   import MapInteractive from "../../components/mapInteractiveClient";
   import { Link } from "@nextui-org/link";
+  import { tags } from "@/public/scripts/data";
   
   export default function createPage() {
     return (
       <div>
         <main>
-          <h1 className="text-5xl font-bold pb-8 pl-1">Plan Your Trip</h1>
+          <h1 className="text-4xl font-bold pb-8 pl-1">Plan Your Trip</h1>
           <div className="grid grid-cols-2 gap-4">
             <MapInteractive />
             <div className="col-start-2 flex justify-center">
