@@ -25,11 +25,18 @@ const MapComponent = () => {
         `;
         
         //const result = await queryOverpass(query);
-        const result = await fetchRouteData([-122.42, 37.78], [-122.42, 37.78]);
+        // Assuming the JSON is publicly accessible under the 'public' directory
+        const response = await fetch('data/routedata.json')
+        const data = await response.json()
+        const coords = data.routes[0].cities
+        console.log(coords)
+
+        //const result = await fetchRouteData({coordinates: coords, type: 'driving'});
+        //console.log(result)
         
-        setQueryResult(JSON.stringify(result, null, 2));
+        //setQueryResult(JSON.stringify(result, null, 2));
       } catch (error) {
-        console.error('Error querying Overpass API:', error);
+        console.error('Error querying Route API:', error);
       }
     };
   

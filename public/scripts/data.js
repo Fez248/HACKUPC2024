@@ -1,4 +1,5 @@
 export const cardsData = [
+
   {
     id: 0,  
     destination: 'Wizards and Wonders: A Magical Journey Through Harry Potter\'s England,',

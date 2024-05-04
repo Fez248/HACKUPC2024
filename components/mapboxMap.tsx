@@ -22,6 +22,7 @@ const MapboxMap = () => {
       }
     }]
   };
+  
   const calculateCenter = (coordinates: number[][]) => {
     const length = coordinates.length;
     const total = coordinates.reduce((acc, [lng, lat]) => {
@@ -35,7 +36,7 @@ const MapboxMap = () => {
 
   useEffect(() => {
     console.log('env: ', process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN);
-    mapboxgl.accessToken = 'pk.eyJ1Ijoid2FuZGVyd2F5IiwiYSI6ImNsdnJka29tNDBwNmkycnJyZ2l2OG1lNm4ifQ.9vwmKwk8iDwP0L85zOW-cw';
+    mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN!;
     const centerCoordinates = calculateCenter(routeResponse.features[0].geometry.coordinates);
 
     const map = new mapboxgl.Map({
@@ -45,12 +46,16 @@ const MapboxMap = () => {
       zoom: 4,
     });
 
+    const marker = new mapboxgl.Marker();
+    marker.setLngLat([-0.127963,51.507479]).addTo(map);
+
     map.on('load', () => {
       // Add route as a source
       map.addSource('route', {
         type: 'geojson',
         data: routeResponse
       });
+
 
       // Add route as a layer
       map.addLayer({

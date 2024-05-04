@@ -28,6 +28,7 @@ const OurCards = () => {
     <div className="grid grid-cols-4 items-stretch">
       {cardsData.slice(0, 4).map((card) => (
         <OurCard className="grid-column" key={card.id} card={card} />
+
       ))}
     </div>
   );
