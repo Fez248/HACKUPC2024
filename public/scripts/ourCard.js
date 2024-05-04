@@ -8,11 +8,7 @@ const OurCard = ({ card }) => {
       <CardBody className="overflow-visible py-2">
         <Image style={{paddingBottom: "10px"}} alt="Card background" src={card.image} width={270}/>
         <h4 className="font-bold text-large">{card.destination}</h4>
-<<<<<<< HEAD
         <p className="text-tiny font-bold" style={{color: 'grey'}}>Made by {card.made_by}</p>
-=======
-        <p className="text-tiny font-bold">Made by {card.made_by}</p>
->>>>>>> ab8963c (Modified cards)
         <p className="text-medium font-bold">{card.description}</p>
       </CardBody>
     </Card>
