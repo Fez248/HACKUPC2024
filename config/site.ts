@@ -4,21 +4,13 @@ export const siteConfig = {
 	name: "WanderWay",
 	description: "Plan beatiful trips with new friends",
 	navItems: [
-		{
-			label: "Home",
-			href: "/",
-		},
+	{
+		label: "Home",
+		href: "/",
+	},
     {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
+      label: "Create Trip",
+      href: "/createTrip",
     },
     {
       label: "About",
