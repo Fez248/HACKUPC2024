@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useRef } from 'react';
 import { useState } from 'react';
 import mapboxgl from 'mapbox-gl';
@@ -69,7 +71,7 @@ const MapboxMap = () => {
     return () => map.remove(); // Clean up the map instance
   });
 
-  return <div style={{ width: '60%', height: '800px' }} ref={mapContainerRef} />;
+  return <div style={{ width: '100%', height: '800px' }} ref={mapContainerRef} />;
 };
 
 export default MapboxMap;

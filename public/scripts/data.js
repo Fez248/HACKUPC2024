@@ -1,5 +1,12 @@
 export const cardsData = [
   {
+    id: 0,  
+    destination: 'The Rainbow Valley',
+    made_by: 'Peter',
+    description: 'Travel specially dedicated to fans of basketball odsjcnsjdcndsjn cndsjcn dsn cwsji',
+    image: '/a.jpg'
+  },
+  {
     id: 1,  
     destination: 'San Francisco',
     made_by: 'Peter',
@@ -36,13 +43,6 @@ export const cardsData = [
   },
   {
     id: 6,  
-    destination: 'San Francisco',
-    made_by: 'Peter',
-    description: 'Travel specially dedicated to fans of basketball odsjcnsjdcndsjn cndsjcn dsn cwsji',
-    image: '/a.jpg'
-  },
-  {
-    id: 7,  
     destination: 'San Francisco',
     made_by: 'Peter',
     description: 'Travel specially dedicated to fans of basketball odsjcnsjdcndsjn cndsjcn dsn cwsji',

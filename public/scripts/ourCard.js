@@ -25,11 +25,11 @@ const OurCard = ({ card }) => {
 
 const OurCards = () => {
   return (
-    <section className="flex flex-wrap gap-4">
+    <div className="grid grid-cols-4 items-stretch">
       {cardsData.slice(0, 4).map((card) => (
-        <OurCard key={card.id} card={card} />
+        <OurCard className="grid-column" key={card.id} card={card} />
       ))}
-    </section>
+    </div>
   );
 };
 
