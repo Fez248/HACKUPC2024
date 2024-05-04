@@ -14,7 +14,9 @@ import { Input } from "@nextui-org/input";
 
 import { link as linkStyles } from "@nextui-org/theme";
 
-import {Image} from "@nextui-org/react";
+import {Divider, Image} from "@nextui-org/react";
+
+import {Avatar} from "@nextui-org/react";
 
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
@@ -23,10 +25,7 @@ import clsx from "clsx";
 
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
-	TwitterIcon,
 	GithubIcon,
-	DiscordIcon,
-	HeartFilledIcon,
 	SearchIcon,
 } from "@/components/icons";
 
@@ -50,11 +49,12 @@ export const Navbar = () => {
 	);
 
 	return (
+		<div>
 		<NextUINavbar maxWidth="xl" position="sticky" height="20px" className="py-6">
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
-					<NextLink className="flex justify-start items-center gap-1" href="/">
-						<Image alt='logo' {...logo} className=" w-17 "/>
+					<NextLink className="flex justify-start items-center gap-1 border-none" href="/">
+						<Image alt='logo' {...logo} className=" w-13 border-r-0 rounded-none"/>
 					</NextLink>
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -86,14 +86,7 @@ export const Navbar = () => {
 					<ThemeSwitch />
 				</NavbarItem>
 				<NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-			</NavbarContent>
-
-			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-				<Link isExternal href={siteConfig.links.github} aria-label="Github">
-					<GithubIcon className="text-default-500" />
-				</Link>
-				<ThemeSwitch />
-				<NavbarMenuToggle />
+				<Avatar showFallback src='https://images.unsplash.com/broken' />
 			</NavbarContent>
 
 			<NavbarMenu>
@@ -119,5 +112,8 @@ export const Navbar = () => {
 				</div>
 			</NavbarMenu>
 		</NextUINavbar>
+		<Divider orientation="horizontal" />
+		</div>
+
 	);
 };
