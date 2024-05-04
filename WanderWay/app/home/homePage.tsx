@@ -11,7 +11,7 @@ export default function homePage() {
       {/* Hero Section */}
       <div className={styles.heroContainer}>
         <div className={styles.blur}></div>
-        <Image className={styles.heroImage} src='/images/homeHero.png' alt='heroImage'></Image>
+        <Image className={styles.heroImage} src='/homeHero.png' alt='heroImage'></Image>
       </div> 
 
       <p className='text-left mt-3 mb-3'>RECOMENDADO PARA TI</p>
