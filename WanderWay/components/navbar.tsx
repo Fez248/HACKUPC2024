@@ -14,8 +14,11 @@ import { Input } from "@nextui-org/input";
 
 import { link as linkStyles } from "@nextui-org/theme";
 
+import {Image} from "@nextui-org/react";
+
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
+import logo from "@/public/nobglogo.png";
 import clsx from "clsx";
 
 import { ThemeSwitch } from "@/components/theme-switch";
@@ -47,12 +50,11 @@ export const Navbar = () => {
 	);
 
 	return (
-		<NextUINavbar maxWidth="xl" position="sticky">
+		<NextUINavbar maxWidth="xl" position="sticky" height="20px" className="py-6">
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
-						<Logo />
-						<p className="font-bold text-inherit">ACME</p>
+						<Image alt='logo' {...logo} className=" w-17 "/>
 					</NextLink>
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
