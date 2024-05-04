@@ -19,8 +19,9 @@ import {
           <h1 className="text-5xl font-bold pb-8 pl-1">Plan Your Trip</h1>
           <div className="grid grid-cols-2 gap-4">
             <MapInteractive />
-            <div className="col-start-2 flex justify-end pt-52">
-            <Link className="col-start-2 flex justify-end pt-52" href="../planTrip/succesfulTrip">
+            <div className="col-start-2 flex justify-center">
+
+            <Link href="../planTrip/succesfulTrip">
               <Button className="w-60" href="./">Next</Button>
             </Link>
             </div>
