@@ -22,8 +22,8 @@ const OurCard = ({ card }) => {
 
 const OurCards = () => {
   return (
-    <section className="flex overflow-x-auto gap-4">
-      {cardsData.map((card) => (
+    <section className="flex flex-wrap gap-3">
+      {cardsData.slice(0,4).map((card) => (
         <OurCard key={card.id} card={card}/>
       ))}
     </section>
