@@ -10,7 +10,6 @@ export default function homePage() {
       {/* Hero Section */}
       <Image alt="Card background" {...homeHero} className='object-cover h-[300px]'/>
       <p className='text-left mt-3 mb-3'>RECOMENDED FOR YOU</p>
-      <MapInteractive/>
       <OurCards/>
     </div>
   );
