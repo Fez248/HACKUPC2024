@@ -16,6 +16,8 @@ import { link as linkStyles } from "@nextui-org/theme";
 
 import {Image} from "@nextui-org/react";
 
+import {Avatar} from "@nextui-org/react";
+
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import logo from "@/public/nobglogo.png";
@@ -93,6 +95,7 @@ export const Navbar = () => {
 					<GithubIcon className="text-default-500" />
 				</Link>
 				<ThemeSwitch />
+				<Avatar showFallback src='https://images.unsplash.com/broken' />
 				<NavbarMenuToggle />
 			</NavbarContent>
 
