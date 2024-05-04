@@ -14,7 +14,7 @@ import { Input } from "@nextui-org/input";
 
 import { link as linkStyles } from "@nextui-org/theme";
 
-import {Image} from "@nextui-org/react";
+import {Divider, Image} from "@nextui-org/react";
 
 import {Avatar} from "@nextui-org/react";
 
@@ -49,11 +49,12 @@ export const Navbar = () => {
 	);
 
 	return (
+		<div>
 		<NextUINavbar maxWidth="xl" position="sticky" height="20px" className="py-6">
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1 border-none" href="/">
-						<Image alt='logo' {...logo} className=" w-17 border-r-0"/>
+						<Image alt='logo' {...logo} className=" w-17 border-r-0 rounded-none"/>
 					</NextLink>
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -111,5 +112,8 @@ export const Navbar = () => {
 				</div>
 			</NavbarMenu>
 		</NextUINavbar>
+		<Divider orientation="horizontal" />
+		</div>
+
 	);
 };

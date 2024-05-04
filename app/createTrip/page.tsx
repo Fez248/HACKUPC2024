@@ -1,5 +1,5 @@
 // pages/index.js
-import {Card, CardBody, Input, Textarea, DateInput} from "@nextui-org/react";
+import {Card, CardBody, Input, Textarea, DateInput, Button} from "@nextui-org/react";
 import {CalendarDate, parseDate} from "@internationalized/date";
 
 
@@ -36,6 +36,10 @@ export default function createPage() {
             <DateInput 
               label={"Arrival Date (optional)"} 
             />
+            <div className="col-start-2 flex justify-end">
+              <Button className="w-60">Next</Button>
+              
+            </div>
             </div>
           </CardBody>
         </Card>
