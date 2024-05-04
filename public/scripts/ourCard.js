@@ -1,39 +1,43 @@
 import React from 'react';
-import { cardsData } from './data.js'; // Import the data
-import {Card, CardHeader, CardBody, Image} from "@nextui-org/react";
-import travelPage from '../../app/travel/[id]/page.tsx';
-import homePage from '../../app/home/homePage.tsx';
-
-import Link from 'next/link'; // Import Link from Next.js
+import { cardsData } from './data.js';
+import { Card, CardBody, Image } from "@nextui-org/react";
+import Link from 'next/link';
 
 const OurCard = ({ card }) => {
   return (
-    <Link href={`/travel/${card.id}`}> {/* Use Link component from Next.js */}
-      <a>
-        <Card className='py-4' style={{width: "18rem"}}> 
-          <CardBody className="overflow-visible py-2">
-            <Image style={{paddingBottom: "10px"}} alt="Card background" src={card.image} width={270}/>
-            <h4 className="font-bold text-large">{card.destination}</h4>
-            <p className="text-tiny font-bold" style={{color: 'grey'}}>Made by {card.made_by}</p>
-            <p className="text-medium font-bold">{card.description}</p>
+    <Link href={`/travel/${card.id}`}>
+      <>
+        <Card className="py-4" style={{ width: "18rem", height: "450px" }}> {/* Tailwind doesn't control external component dimensions directly */}
+          <CardBody className="flex flex-col justify-between overflow-visible py-2 h-full">
+            <Image 
+              alt="Card background" 
+              src={card.image} 
+              width="100%" 
+              height="150"  
+              className="object-cover" 
+            />
+            <div className="flex flex-col justify-between h-full">
+              <h4 className="font-bold text-lg">{card.destination}</h4>
+              <p className="text-xs font-bold text-gray-500">Made by {card.made_by}</p>
+              <p className="text-sm font-bold overflow-hidden overflow-ellipsis">
+                {card.description}
+              </p>
+            </div>
           </CardBody>
         </Card>
-      </a>
+      </>
     </Link>
   );
 };
 
 const OurCards = () => {
   return (
-    <div className="grid grid-cols-4 items-stretch">
+    <div className="grid grid-cols-4 items-stretch gap-4">
       {cardsData.slice(0, 4).map((card) => (
-        <OurCard className="grid-column" key={card.id} card={card} />
-
+        <OurCard key={card.id} card={card} />
       ))}
     </div>
   );
- };
- 
-
+};
 
 export default OurCards;
