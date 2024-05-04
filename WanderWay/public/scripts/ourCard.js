@@ -5,16 +5,10 @@ import {Card, CardHeader, CardBody, Image} from "@nextui-org/react";
 const OurCard = ({ card }) => {
   return (
     <Card className='py-4 rounded-none'> 
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+      <CardBody className="overflow-visible py-2">
+        <Image alt="Card background" src={card.image} width={270}/>
         <h4 className="font-bold text-large">{card.destination}</h4>
         <p className="text-tiny font-bold">{card.description}</p>
-      </CardHeader>
-      <CardBody className="overflow-visible py-2">
-        <Image
-          alt="Card background"
-          src={card.image}
-          width={270}
-        />
       </CardBody>
     </Card>
   );
