@@ -50,3 +50,11 @@ export const cardsData = [
   }
   // Add more card data here...
 ];
+
+export const events = [
+  { id: 1, timestamp: new Date('2024-05-01T08:30:00'), title: 'Event 1', description: 'Description for Event 1' },
+  { id: 2, timestamp: new Date('2024-05-03T08:30:00'), title: 'Event 2', description: 'Description for Event 2' },
+  { id: 3, timestamp: new Date('2024-05-03T08:30:00'), title: 'Event 3', description: 'Description for Event 2' },
+  // Add more events as needed
+ ];
+ 

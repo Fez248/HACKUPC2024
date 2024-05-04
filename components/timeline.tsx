@@ -38,7 +38,7 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
     return (
         <div className="timeline">
             {events.map(event => (
-                <div key={event.id} className="bg-gradient-to-r from-blue-400 to-green-200 rounded-lg shadow-xl p-4 mb-4 ml-64" style={{width: '40%'}}>
+                <div key={event.id} className="bg-[#40A2E3] rounded-lg shadow-xl p-4 mb-4 ml-64" style={{width: '60%'}}>
                     <div className="flex items-center mb-2">
                         <div className="ml-4">
                             <h3 className="text-lg font-medium text-gray-900">{event.title}</h3>
