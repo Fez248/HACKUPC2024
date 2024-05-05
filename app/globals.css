@@ -16,3 +16,10 @@
     font-weight: 700;
     margin-bottom: 1rem;
 }
+
+.subtitle {
+    font-family: 'FontTitle', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
