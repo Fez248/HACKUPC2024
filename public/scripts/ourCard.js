@@ -7,21 +7,15 @@ const OurCard = ({ card }) => {
   return (
     <Link href={`/travel/${card.id}`}>
       <>
-        <Card className="py-4" style={{ width: "18rem", height: "450px" }}> {/* Tailwind doesn't control external component dimensions directly */}
-          <CardBody className="flex flex-col justify-between overflow-visible py-2 h-full">
-            <Image 
-              alt="Card background" 
-              src={card.image} 
-              width="100%" 
-              height="150"  
-              className="object-cover" 
-            />
-            <div className="flex flex-col justify-between h-full">
+        <Card className="py-4" style={{ width: "18rem", height: "450px", marginBottom: 20}}> {/* Tailwind doesn't control external component dimensions directly */}
+          <CardBody className="grid grid-rows-2">
+            <div className='relative h-225px overflow-hidden flex justify-center items-center'>
+              <Image alt="Card background" src={card.image} wrapp/>
+            </div>
+            <div className='text-justify'>
               <h4 className="font-bold text-lg">{card.destination}</h4>
-              <p className="text-xs font-bold text-gray-500">Made by {card.made_by}</p>
-              <p className="text-sm font-bold overflow-hidden overflow-ellipsis">
-                {card.description}
-              </p>
+              <p className="text-xs font-bold text-gray-300">Made by {card.made_by}</p>
+              <p className="text-m font-bold"> {card.brief} </p>
             </div>
           </CardBody>
         </Card>
