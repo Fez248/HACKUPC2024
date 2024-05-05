@@ -54,7 +54,7 @@ import {
           </Card>
 
             <div className="w-full flex justify-center pt-10 align-bottom"> 
-              <Link href="/">
+              <Link href="/finalTrip">
                 <Button className="w-60">Next</Button>
               </Link>
             </div>
