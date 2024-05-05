@@ -26,7 +26,7 @@ export default function CreatePage() {
     arrivalDate: null
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
