@@ -59,7 +59,7 @@ const MapboxInteractive: FC<{
   }, [onChange]);
 
   return (
-    <div style={{ width: "60%", height: "800px" }} ref={mapContainerRef} />
+    <div style={{ width: "100%", height: "800px" }} ref={mapContainerRef} />
   );
 };
 
