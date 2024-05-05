@@ -16,7 +16,7 @@ const OurCard = ({ card }: { card: any }) => {
               isZoomed
               src={card.image}
              />
-            <div className='text-justify'>
+            <div className=''>
               <h4 className="font-bold text-lg">{card.destination}</h4>
               <p className="text-xs font-bold text-gray-300">Made by {card.made_by}</p>
               <p className="text-m font-bold"> {card.brief} </p>

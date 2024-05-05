@@ -20,12 +20,14 @@ function TravelPage({ params }: { params: { id: string } }) {
     </div>
     <div className='grid grid-cols-3 w-fill pt-8'>
       <div className='space-y-5 col-span-2' >
-        <p className=' text-xs text-stone-600'>fellow travellers:</p>
+        <p className=' text-xs text-stone-600'>Fellow travellers:</p>
         <Avatars/>
-        <p className='text-justify'>{cardsData[+params.id].description}</p>
+        <p className=''>{cardsData[+params.id].description}</p>
       </div>
-      <div className=' pt-24'><Timeline events={events}/></div> 
-      <div className='w-3/4 col-span-2'><MapboxMap info={routesArray[parseInt(params.id)]}/></div>
+      <div className='grid grid-cols-3 col-span-3 pt-24'>
+        <div className='col-span-2'><MapboxMap info={routesArray[parseInt(params.id)]}/></div>
+        <div className='col-span-1'><Timeline events={events}/></div> 
+      </div>
     </div>
     </div>
   );
