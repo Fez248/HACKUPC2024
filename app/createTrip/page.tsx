@@ -16,6 +16,7 @@ import { Link } from "@nextui-org/link";
 import { tags } from "@/public/scripts/data";
 import { cardsData } from "@/public/scripts/data";
 import { animals } from "@/public/scripts/data";
+import { saveDataToFile } from "./savedata";
 
 export default function CreatePage() {
   const [formData, setFormData] = useState({
@@ -38,6 +39,7 @@ export default function CreatePage() {
     // Convert formData to JSON format
     console.log("aaaaaaaaaa");
     const jsonData = JSON.stringify(formData, null, 2);
+    saveDataToFile("./tripData.js", jsonData);
     console.log(jsonData); // Just logging for demonstration
   };
   return (
