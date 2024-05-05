@@ -1,7 +1,7 @@
 export const cardsData = [
   {
     id: 0,  
-    destination: 'Wizards and Wonders: A Magical Journey Through Harry Potter\'s England,',
+    destination: 'Wizards and Wonders: A Magical Journey Through Harry Potter\'s England',
     made_by: 'Peter',
     description: 'Embark on a spellbinding adventure through England\'s enchanting landscapes, tracing the footsteps of Harry Potter and his friends. From the bustling streets of London to the historic halls of Oxford, immerse yourself in the magical world of Hogwarts. Explore iconic filming locations like Alnwick Castle and Lacock Abbey, and uncover the real-life inspirations behind J.K. Rowling\'s beloved wizarding universe. Join us on this fantastical journey filled with wizardry, wonder, and unforgettable experiences.',
     image: '/1.avif'
@@ -15,7 +15,7 @@ export const cardsData = [
   },
   {
     id: 2,  
-    destination: 'La Liga Legends: A Soccer Sojourn Through Spain"',
+    destination: 'La Liga Legends: A Soccer Sojourn Through Spain',
     made_by: 'Peter',
     description: 'Kick off your soccer journey through Spain\'s most iconic cities, where the passion for fútbol runs deep. Experience the electric atmosphere of Madrid\'s Santiago Bernabéu and Barcelona\'s Camp Nou stadiums, where footballing dreams come to life. Immerse yourself in the rich footballing culture of Valencia, Sevilla, and Bilbao, as you explore historic stadiums and soak in the fervent support of local fans. From the coastal charm of Vigo to the footballing prowess of Villarreal, discover the essence of Spanish football in every corner of the country. Join us on this exhilarating adventure filled with goals, glory, and the beautiful game.',
     image: '3.avif'
