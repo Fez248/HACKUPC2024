@@ -9,16 +9,24 @@ import { Avatars } from '../../../components/avatars';
 
 function TravelPage({ params }: { params: { id: string } }) {
   return (
-    <div className='grid grid-cols-2'>
-      <div className='space-y-5'>
-        <p  className=' text-2xl'> {cardsData[+params.id].destination}</p>
+    <div className='w-full h-full flex-col mx-auto'>
+    <div className='w-full h-52 flex flex-col justify-end rounded-xl' style={{ 
+      backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(${cardsData[+params.id].image})`, 
+      backgroundSize: 'fill', 
+      backgroundPosition: 'center', 
+      backgroundRepeat: 'no-repeat' 
+    }}>
+      <p className='text-3xl title'> {cardsData[+params.id].destination}</p>
+    </div>
+    <div className='grid grid-cols-3 w-fill pt-8'>
+      <div className='space-y-5 col-span-2' >
+        <p className=' text-xs text-stone-600'>fellow travellers:</p>
         <Avatars/>
         <p className='text-justify'>{cardsData[+params.id].description}</p>
-        <Image className='max-h-96' alt='Image' src={cardsData[+params.id].image}/>
       </div>
-      
-      <Timeline events={events}/> 
-      <div className='w-3/4'><MapboxMap info={routesArray[parseInt(params.id)]}/></div>
+      <div className=' pt-24'><Timeline events={events}/></div> 
+      <div className='w-3/4 col-span-2'><MapboxMap info={routesArray[parseInt(params.id)]}/></div>
+    </div>
     </div>
   );
 }
