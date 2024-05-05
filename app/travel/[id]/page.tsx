@@ -1,10 +1,10 @@
-import MapboxMap from 'components/mapboxMap';
-import Timeline from 'components/timeline'
+import MapboxMap from '../../../components/mapboxMap';
+import Timeline from '../../../components/timeline'
 import { Card, CardHeader, CardBody, Image, Avatar } from "@nextui-org/react";
 import { useRouter } from 'next/router';
 import { cardsData, events } from '@/public/scripts/data.js';
 import { Spacer } from "@nextui-org/spacer";
-import { Avatars } from 'components/avatars';
+import { Avatars } from '../../../components/avatars';
 
 function TravelPage({ params }: { params: { id: string } }) {
   return (
