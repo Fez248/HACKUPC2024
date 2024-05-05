@@ -16,7 +16,7 @@ function TravelPage({ params }: { params: { id: string } }) {
       backgroundPosition: 'center', 
       backgroundRepeat: 'no-repeat' 
     }}>
-      <p className='text-3xl title mx-6'> {cardsData[+params.id].destination}</p>
+      <p className='text-3xl title mx-6 text-white'> {cardsData[+params.id].destination}</p>
     </div>
     <div className='grid grid-cols-3 w-fill pt-8'>
       <div className='space-y-5 col-span-2' >

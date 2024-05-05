@@ -36,7 +36,7 @@ const MapboxMap: FC<{
 
     const map = new mapboxgl.Map({
       container: mapContainerRef.current!,
-      style: "mapbox://styles/wanderway/clvrfh4a500ct01pf1h4u6yny",
+      style: "mapbox://styles/wanderway/clvt66se200oc01qua9dpacdv",
       center: centerCoordinates, // Center of the US for demo purposes
       zoom: 4,
     });
@@ -76,7 +76,7 @@ const MapboxMap: FC<{
   });
 
   return (
-    <div style={{ width: "100%", height: "800px" }} ref={mapContainerRef} />
+    <div style={{ width: "100%", height: "800px", }} className=" rounded-xl" ref={mapContainerRef} />
   );
 };
 
