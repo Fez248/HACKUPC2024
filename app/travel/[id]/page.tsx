@@ -25,8 +25,8 @@ function TravelPage({ params }: { params: { id: string } }) {
         <p className=''>{cardsData[+params.id].description}</p>
       </div>
       <div className='grid grid-cols-3 col-span-3 pt-24'>
-        <div className='col-span-2'><MapboxMap info={routesArray[parseInt(params.id)]}/></div>
-        <div className='col-span-1'><Timeline events={events}/></div> 
+        <div className='col-span-2 pr-8'><MapboxMap info={routesArray[parseInt(params.id)]}/></div>
+        <div className='col-span-1 flex justify-start w-full'><Timeline events={events}/></div> 
       </div>
     </div>
     </div>
