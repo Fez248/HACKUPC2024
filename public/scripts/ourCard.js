@@ -33,7 +33,7 @@ const OurCard = ({ card }) => {
 const OurCards = () => {
   return (
     <div className="grid grid-cols-4 items-stretch gap-4">
-      {cardsData.slice(0, 4).map((card) => (
+      {cardsData.slice(0, 11).map((card) => (
         <OurCard key={card.id} card={card} />
       ))}
     </div>
