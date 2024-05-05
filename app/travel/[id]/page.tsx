@@ -10,13 +10,13 @@ import { Avatars } from '../../../components/avatars';
 function TravelPage({ params }: { params: { id: string } }) {
   return (
     <div className='w-full h-full flex-col mx-auto'>
-    <div className='w-full h-52 flex flex-col justify-end rounded-xl' style={{ 
+    <div className='w-full h-52  flex flex-col justify-end rounded-xl' style={{ 
       backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(${cardsData[+params.id].image})`, 
       backgroundSize: 'fill', 
       backgroundPosition: 'center', 
       backgroundRepeat: 'no-repeat' 
     }}>
-      <p className='text-3xl title'> {cardsData[+params.id].destination}</p>
+      <p className='text-3xl title mx-6'> {cardsData[+params.id].destination}</p>
     </div>
     <div className='grid grid-cols-3 w-fill pt-8'>
       <div className='space-y-5 col-span-2' >
