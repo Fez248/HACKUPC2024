@@ -3,6 +3,7 @@ import Timeline from '../../../components/timeline'
 import { Card, CardHeader, CardBody, Image, Avatar } from "@nextui-org/react";
 import { useRouter } from 'next/router';
 import { cardsData, events } from '@/public/scripts/data.js';
+import { EventsArray } from '../../../public/data/routeActivities';
 import { Spacer } from "@nextui-org/spacer";
 import { routesArray } from '../../../public/data/routedata2';
 import { Avatars } from '../../../components/avatars';
@@ -26,7 +27,7 @@ function TravelPage({ params }: { params: { id: string } }) {
       </div>
       <div className='grid grid-cols-3 col-span-3 pt-24'>
         <div className='col-span-2'><MapboxMap info={routesArray[parseInt(params.id)]}/></div>
-        <div className='col-span-1'><Timeline events={events}/></div> 
+        <div className='col-span-1'><Timeline events={EventsArray[parseInt(params.id)]}/></div> 
       </div>
     </div>
     </div>

@@ -40,3 +40,10 @@ export interface Waypoint {
   name: string;
   location: [number, number];
 }
+
+export interface Event {
+  id: number;
+  timestamp: Date;
+  title: string;
+  description: string;
+}
