@@ -16,9 +16,9 @@ function TravelPage({ params }: { params: { id: string } }) {
         <p className='text-justify'>{cardsData[+params.id].description}</p>
         <Image className='max-h-96' alt='Image' src={cardsData[+params.id].image}/>
       </div>
-      <div className='w-3/4'><MapboxMap info={routesArray[parseInt(params.id)]}/></div>
+      
       <Timeline events={events}/> 
-      <MapboxMap/>
+      <div className='w-3/4'><MapboxMap info={routesArray[parseInt(params.id)]}/></div>
     </div>
   );
 }
