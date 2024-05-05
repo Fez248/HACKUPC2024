@@ -1,5 +1,5 @@
 export default function createPage() {
     return (
-        <div> YOW </div>
+        <div> Your trip has been created. </div>
     )
 }

@@ -1,4 +1,7 @@
 "use client"
+
+const { KV_REST_API_URL, KV_REST_API_TOKEN } = process.env;
+ 
 // pages/index.js
 import {
   Card,
@@ -34,12 +37,34 @@ export default function CreatePage() {
     }));
   };
 
-  const handleSave = () => {
-    // Convert formData to JSON format
-    console.log("aaaaaaaaaa");
-    const jsonData = JSON.stringify(formData, null, 2);
-    console.log(jsonData); // Just logging for demonstration
-  };
+  const handleSave = async () => {  
+    console.log("Data to send:", formData);
+    const apiUrl = `https://enabled-stallion-31563.upstash.io/set/userSession"`;
+    const authToken = "AXtLAAIncDE5ZDAyMzdjMjEwZDk0OGFjYWMyNTFmMjJiODc0N2NjZnAxMzE1NjM";
+    
+    try {
+        const response = await fetch(apiUrl, {
+            
+            method: 'POST', // or 'PUT'
+            headers: {
+                'Authorization': `${authToken}`
+            },
+            body: JSON.stringify(formData)
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log("Data received:", data);
+    } catch (error) {
+        console.error("Error during fetch:", error);
+    }
+};
+
+  
+  
   return (
     <div>
       <main>
@@ -83,7 +108,7 @@ export default function CreatePage() {
             value={formData.arrivalDate}
           />
           <Link className="col-start-2 flex justify-end pt-52" href="../planTrip">
-          <Button className="w-60" href="./" onClick={handleSave}>Next</Button>
+          <Button className="w-60" href="./" onClick={handleSave} type="submit">Next</Button>
           </Link>
         </div>
       </main>
