@@ -25,7 +25,7 @@ import {
               <div className="flex flex-col justify-between h-full">
                 <h4 className="font-bold text-lg">Opció 1</h4>
                 <p className="text-sm font-bold overflow-hidden overflow-ellipsis">
-                  YOW1
+                Guided tour through London&aph;s famous landmarks that appeared in the Harry Potter films.
                 </p>
               </div>
             </CardBody>
@@ -36,7 +36,7 @@ import {
               <div className="flex flex-col justify-between h-full">
                 <h4 className="font-bold text-lg">Opció 2</h4>
                 <p className="text-sm font-bold overflow-hidden overflow-ellipsis">
-                  YOW1
+                Explore the University of Oxford where several scenes were filmed, experiencing the aura and architecture that inspired the halls of Hogwarts.
                 </p>
               </div>
             </CardBody>
@@ -47,7 +47,7 @@ import {
               <div className="flex flex-col justify-between h-full">
                 <h4 className="font-bold text-lg">Opció 3</h4>
                 <p className="text-sm font-bold overflow-hidden overflow-ellipsis">
-                  YOW1
+                Visit to the actual filming locations outside of London to see where famous scenes from the movies were brought to life.
                 </p>
               </div>
             </CardBody>
